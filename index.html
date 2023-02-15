@@ -13,6 +13,10 @@
             <input type="hidden" name="login" value="login">
             <input type="submit" value="Login">
         </form>
-        <p>Login count: <?php echo $_SESSION['login_count']; ?></p>
+        <form method="post" action="counter.php">
+            <input type="hidden" name="logout" value="logout">
+            <input type="submit" value="Logout">
+        </form>
+        <p>Login count: <?php echo $_SESSION['login_count']; ?></p>          
     </body>
 </html>
